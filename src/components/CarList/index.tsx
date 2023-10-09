@@ -22,6 +22,7 @@ import CarCardSkeleton from "./components/CarCardSkeleton";
 import { Car } from "@/types/car";
 import useCarList from "./hooks";
 import { DEFAULT_PAGE_SIZE_QUERY_PARAM_VALUE } from "@/constants/query";
+import NotFound from "./components/NotFound";
 
 type Props = {
   carsSSR: ListResult<Car>;
@@ -159,6 +160,8 @@ export default function CarList({ carsSSR }: Props) {
               </Grid>
             ))}
         </Grid>
+
+        {!isListLoading && cars.items.length === 0 && <NotFound />}
 
         <Box
           sx={{

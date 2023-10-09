@@ -1,7 +1,7 @@
+import { ListResult } from "pocketbase";
 import { GetServerSideProps } from "next";
 import { getParsedCarListQueryParams } from "@/utils/query";
 import { Car } from "@/types/car";
-import { ListResult } from "pocketbase";
 import CarList from "@/components/CarList";
 
 import { PAGE_QUERY_PARAM_NAME } from "@/constants/query";

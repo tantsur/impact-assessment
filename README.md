@@ -1,7 +1,7 @@
 ## Getting Started
 
 1. `npm i`
-2. `npm run dev`
+2. `npm run build && npm start`
 3. [http://localhost:3000/cars](http://localhost:3000/cars)
 
 # Overivew
